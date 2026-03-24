@@ -31,7 +31,7 @@ except ValueError:
     print("This was not an option")
     exit()
 
-print(f"Please enter the amount of {unit[user_index + user_index]} to convert")
+print(f"Please enter the amount of {unit[user_index + user_index + user_direction]} to convert")
 try:
     user_amount = float(input())
 except ValueError:
@@ -42,4 +42,4 @@ if user_direction == 0:
     converted_value = user_amount * ratios[user_index]
 elif user_direction == 1:
     converted_value = user_amount / ratios[user_index]
-print(f"{converted_value:.2f}",unit[user_index + user_index + 1])
+print(f"{converted_value:.2f}",unit[user_index + user_index])
